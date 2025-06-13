@@ -182,28 +182,17 @@ const SoulAuditQuiz = () => {
   };
 
   const generateFallbackCertificate = (userAnswers) => {
-    const funnyValues = ["3.50", "tree fiddy", "two rubber bands", "half a sandwich", "your Netflix password", "a really good hug"];
+    const funnyValues = [
+      "Worth exactly 3 Wi-Fi passwords and a half-eaten banana 🍌",
+      "Current market value: one really good sneeze 🤧",
+      "Appraised at 2.5 rubber bands and yesterday's leftover anxiety 😅",
+      "Valued at one slightly used motivational quote from 2019 ✨",
+      "Worth approximately 47 unread notifications and a parking ticket 🎫",
+      "Current soul price: three deep sighs and a forgotten password 🔐"
+    ];
     const randomValue = funnyValues[Math.floor(Math.random() * funnyValues.length)];
     
-    return `🎭 OFFICIAL SOUL VALUATION CERTIFICATE 🎭
-
-Congratulations! Your soul has been thoroughly audited by our top-tier existential accountants (they're all bananas, literally).
-
-SOUL VALUE: ${randomValue}
-
-Based on your deeply philosophical responses, your soul exhibits premium characteristics of chaotic energy, questionable life choices, and an impressive ability to turn any situation into a meme.
-
-Your answers reveal a person who trades sleep for Wi-Fi, communicates primarily through confused screaming, and has at least 47 unfinished conversations with yourself.
-
-SPECIAL CERTIFICATIONS:
-✓ Certified Overthinker (Level: Expert)
-✓ Professional Procrastinator 
-✓ Licensed Chaos Coordinator
-✓ Diploma in Avoiding Responsibilities
-
-This certificate is valid until you question your life choices again (approximately 3.7 minutes).
-
-Remember: Your soul may be worth peanuts in today's economy, but at least you're entertaining!`;
+    return randomValue;
   };
 
   const resetQuiz = () => {
